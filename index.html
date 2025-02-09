@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker & Meal Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Tracker & Meal Planner</h1>
+
+    <!-- Workout Logging Section -->
+    <section>
+      <h2>Log Your Workout</h2>
+      <form id="workoutForm">
+        <label for="workoutType">Workout Type:</label>
+        <input type="text" id="workoutType" placeholder="e.g., Running, Yoga" required>
+        
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" placeholder="e.g., 30" required>
+        
+        <button type="submit">Log Workout</button>
+      </form>
+      <div id="workoutLog"></div>
+    </section>
+
+    <!-- Meal Suggestions Section -->
+    <section>
+      <h2>Meal Suggestions</h2>
+      <button id="fetchMeals">Get Meal Suggestions</button>
+      <div id="mealSuggestions"></div>
+    </section>
+
+    <!-- Progress Visualization Section -->
+    <section>
+      <h2>Your Progress</h2>
+      <canvas id="progressChart"></canvas>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
